@@ -8,7 +8,7 @@ class RoomProvider extends Component {
     state={
         rooms:[],
         sortedRooms: [],
-        featuredRooms: [],
+        onhomeRooms: [],
         loading:true,
         heritage:'any',
         instrument:'any',
@@ -24,14 +24,14 @@ class RoomProvider extends Component {
 
 componentDidMount(){
     let rooms = this.formatData(items);
-    let featuredRooms = rooms.filter(room => room.featured === true);
+    let onhomeRooms = rooms.filter(room => room.onhome === true);
     let minmusicalTalentRating = Math.min(...rooms.map(item => item.musicalTalentRating));
     let maxmusicalTalentRating = Math.max(...rooms.map(item => item.musicalTalentRating));
     let maxAge = Math.max(...rooms.map(item => item.age));
 
         this.setState ({
         rooms,
-        featuredRooms,
+        onhomeRooms,
         sortedRooms:rooms, 
         loading:false,
         musicalTalentRating:minmusicalTalentRating,

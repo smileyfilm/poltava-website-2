@@ -17,7 +17,7 @@ export default [
       instrument: "Guitar",
       university: false,
       goodlooking: false,
-      featured: true,
+      onhome: true,
       description:
         "Originally from Russia, Samoilenko immigrated to New Zealand with his family many years ago in an attempt to escape the wrath of communism. Samoilenko joined the Royal New Zealand Navy after graduating from high school, and has been working there for at least a few years. He currently lives with his parents on the North Shore, and his passion for music is so strong that he chooses writing music in their basement over having a girlfriend or anything else that would probably improve his life.",
       additionaltalents: [
@@ -52,7 +52,7 @@ export default [
       instrument: "Drums",
       university: true,
       goodlooking: false,
-      featured: true,
+      onhome: true,
       description:
         "Originally from Whangarei, Cole moved to Auckland from small-town New Zealand as a teenager in an attempt to escape racism and homophobia. He originally pursued a career in the Royal New Zealand Navy, where he met his musical mentor in Igor Samoilenko. Eventually proving too pathetic to stay in the military, he decided to go to university to study computer science and pursue a career in programming. He has only just moved out from his parents house and is still with the one girlfriend he has only ever had.",
       additionaltalents: [
@@ -87,7 +87,7 @@ export default [
       instrument: "Bass",
       university: true,
       goodlooking: true,
-      featured: true,
+      onhome: true,
       description:
         "Born and raised in Ponsonby, Auckland, to parents of NZ and Deutsch descent, Armstrong knows a thing or two about succeeding against the odds. He first picked up a guitar at age 7 and his teacher told him he was the most talented 7 year old she had 'ever seen play the wonderful instrument - and I've seen Jimi Hendrix live!'. His flair for the guitar was so good that he was chosen to play 'Mary had a Little Lamb' at his primary school talent show, for which he received a standing ovation. In and out of bands because they could not match his talents over the years, he eventually settled with Poltava because he thought they had a bit of an X factor. He mastered the bass in the space of two weeks simply to join the band, and now writes the quality bass lines and sings the melodies along with Samoilenko. He has had one long term relationship and many casual partners over the years.",
       additionaltalents: [

@@ -4,19 +4,19 @@ import Title from './Title';
 import Loading from './Loading';
 import Room from "../components/Room";
 //import AMemberPreview from "../components/AMemberPreview";
-export default class FeaturedRooms extends Component {
+export default class OnHomeRooms extends Component {
     static contextType = RoomContext;
     render() {
-        let {loading, featuredRooms:rooms} = this.context;
+        let {loading, onhomeRooms:rooms} = this.context;
         rooms = rooms.map(room => {
             return <Room key={room.id} room={room}/>
         })
         return (
             
             <div>
-            <section className="featured-rooms"> 
+            <section className="onhome-rooms"> 
             <Title title="Our Band Members"/>
-                <div className= "featured-rooms-center"> 
+                <div className= "onhome-rooms-center"> 
                 {loading? <Loading/> : rooms}
                     
                 </div>
