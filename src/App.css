@@ -158,14 +158,14 @@ h6 {
 /* end of navbar */
 /* Hero */
 .defaultHero,
-.roomsHero {
+.membersHero {
   min-height: calc(180vh - 70px);
   background: url("./images/poltavablackandwhite.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
+.membersHero {
   background-image: url("./images/poltavacreativehouse.jpg");
   min-height: calc(160vh - 70px);
   display: flex;
@@ -289,17 +289,17 @@ h6 {
   }
 }
 /*end of services */
-/* onHome rooms */
+/* onHome members */
 
-/*.onHome-rooms {
+/*.onHome-members {
   padding: 5rem 0;
 }*/
-.onHome-rooms {
+.onHome-members {
   padding: 5rem 0;
   
 }
 
-/*.onHome-rooms-center {
+/*.onHome-members-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -308,7 +308,7 @@ h6 {
   grid-column-gap: 40px;
 }*/
 
-.onHome-rooms-center {
+.onHome-members-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -317,14 +317,14 @@ h6 {
   grid-column-gap: 40px;
 }
 
-/*.onHome-rooms-center {
+/*.onHome-members-center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   
   
 }
-.onHome-rooms-center-center {
+.onHome-members-center-center {
   flex: 0 0 calc(16.66% - 20px);
   background: teal;
   color: white;
@@ -335,27 +335,27 @@ h6 {
 
 
 @media screen and (min-width: 776px) {
-  .onHome-rooms-center {
+  .onHome-members-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 
 @media screen and (min-width: 992px) {
-  .onHome-rooms-center {
+  .onHome-members-center {
     width: 95vw;
     max-width: 1170px;
   }
   
 }
 
-/* end pf onHome rooms */
-/* room */
-.room {
+/* end pf onHome members */
+/* member */
+.member {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.room:hover {
+.member:hover {
   box-shadow: var(--darkShadow);
 }
 
@@ -385,7 +385,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+.member-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -401,10 +401,10 @@ h6 {
 .img-container:hover .musicalTalentRating-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .member-link {
   transform: translate(-50%, -50%) scale(1);
 }
-.room-info {
+.member-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
@@ -412,13 +412,13 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
-/* single room*/
+/* end of member  */
+/* single member*/
 
-.single-room {
+.single-member {
   padding: 5rem 0 0 0;
 }
-.single-room-images {
+.single-member-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -426,11 +426,11 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-.single-room-images img {
+.single-member-images img {
   width: 100%;
   display: block;
 }
-.single-room-info {
+.single-member-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -456,11 +456,11 @@ h6 {
 .info h6 {
   font-weight: 300;
 }
-.room-additionaltalents {
+.member-additionaltalents {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-additionaltalents h6 {
+.member-additionaltalents h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -472,13 +472,13 @@ h6 {
   grid-row-gap: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-additionaltalents {
+  .single-member-images,
+  .single-member-info,
+  .member-additionaltalents {
     width: 95vw;
     max-width: 1170px;
   }
-  .single-room-info {
+  .single-member-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
@@ -487,12 +487,12 @@ h6 {
     padding-left: 3rem;
   }
 }
-/* end of single room*/
-/* roomlist */
-.roomslist {
+/* end of single member*/
+/* memberlist */
+.memberslist {
   padding: 5rem 0;
 }
-.roomslist-center {
+.memberslist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -502,18 +502,18 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .memberslist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .memberslist-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end of roomlist */
-/*  rooms fitler*/
+/* end of memberlist */
+/*  members fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -564,7 +564,7 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+/* end of members fitler*/
 .center {
   display: block;
   margin-left: 240px;

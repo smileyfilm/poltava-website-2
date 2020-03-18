@@ -1,19 +1,19 @@
-import room1 from "./images/details-1.jpeg";
-import room2 from "./images/details-2.jpeg";
-import room3 from "./images/details-3.jpeg";
-import room4 from "./images/details-4.jpeg";
-import img1 from "./images/room-1.jpeg";
-import img2 from "./images/room-2.jpeg";
-import img3 from "./images/room-3.jpeg";
-import img4 from "./images/room-4.jpeg";
-import img5 from "./images/room-5.jpeg";
-import img6 from "./images/room-6.jpeg";
-import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
-import img9 from "./images/room-9.jpeg";
-import img10 from "./images/room-10.jpeg";
-import img11 from "./images/room-11.jpeg";
-import img12 from "./images/room-12.jpeg";
+import member1 from "./images/details-1.jpeg";
+import member2 from "./images/details-2.jpeg";
+import member3 from "./images/details-3.jpeg";
+import member4 from "./images/details-4.jpeg";
+import img1 from "./images/member-1.jpeg";
+import img2 from "./images/member-2.jpeg";
+import img3 from "./images/member-3.jpeg";
+import img4 from "./images/member-4.jpeg";
+import img5 from "./images/member-5.jpeg";
+import img6 from "./images/member-6.jpeg";
+import img7 from "./images/member-7.jpeg";
+import img8 from "./images/member-8.jpeg";
+import img9 from "./images/member-9.jpeg";
+import img10 from "./images/member-10.jpeg";
+import img11 from "./images/member-11.jpeg";
+import img12 from "./images/member-12.jpeg";
 
 export default [
   {
@@ -52,21 +52,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -109,21 +109,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -166,21 +166,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -223,21 +223,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -280,21 +280,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -337,21 +337,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -394,21 +394,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -451,21 +451,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -508,21 +508,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -565,21 +565,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -622,21 +622,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -679,21 +679,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }
@@ -729,28 +729,28 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: member1
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: member2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: member3
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: member4
             }
           }
         }

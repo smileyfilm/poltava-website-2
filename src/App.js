@@ -3,7 +3,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Members from './pages/Members';
-import AMember from './pages/SingleRoom';
+import AMember from './pages/SingleMember';
 import Error from './pages/Error';
 
 import {Route, Switch} from 'react-router-dom';

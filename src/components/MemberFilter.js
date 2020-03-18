@@ -6,13 +6,13 @@ import Title from '../components/Title';
 const getUnique = (items, value) =>{
     return [...new Set(items.map(item => item[value]))]
 }
-export default function RoomFilter({rooms}) {
+export default function MemberFilter({members}) {
     const context = useContext(MemberContext);
     const {
         handleChange, heritage, instrument, musicalTalentRating, minmusicalTalentRating, maxmusicalTalentRating, minAge, maxAge, goodlooking, university
     } = context;
     // get unique heritages
-let heritageOptions = getUnique(rooms, 'heritage');
+let heritageOptions = getUnique(members, 'heritage');
 // add all
 
 heritageOptions = ['any',...heritageOptions];
@@ -23,7 +23,7 @@ heritageOptions = heritageOptions.map((item,index) =>{
     );
 });
 
-let people = getUnique(rooms, 'instrument');
+let people = getUnique(members, 'instrument');
 people = ['any',...people];
 people = people.map((item,index)=>{return <option key={index} value = {item}>{item} </option>
 })
@@ -47,7 +47,7 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
             </select>
             </div>
                 {/*end guests*/}
-                {/* room musicalTalentRating*/}
+                {/* member musicalTalentRating*/}
                 <div className = "form-group">
                 <label htmlFor="musicalTalentRating">
                     Musical Talent Minimum: 
@@ -56,7 +56,7 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
                 </label>
                 <input type = "range" name="musicalTalentRating" min= {minmusicalTalentRating} max={maxmusicalTalentRating} id="musicalTalentRating" value={musicalTalentRating} onChange={handleChange} className="form-control" />
                 </div>
-                {/*end of room musicalTalentRating */}
+                {/*end of member musicalTalentRating */}
 
                 {/* age */ }
                 <div className = "form-group">

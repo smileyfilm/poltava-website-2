@@ -1,14 +1,14 @@
 
 
 import React, { Component } from "react";
-import defaultBcg from "../images/room-1.jpeg";
+import defaultBcg from "../images/member-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { MemberContext } from "../context";
 import StyledHero from '../components/StyledHero';
 
-export default class SingleRoom extends Component {
+export default class SingleMember extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -23,15 +23,15 @@ export default class SingleRoom extends Component {
   //   console.log(this.props);
   // }
   render() {
-    const { getRoom } = this.context;
-    const room = getRoom(this.state.slug);
+    const { getMember } = this.context;
+    const member = getMember(this.state.slug);
 
-    if (!room) {
+    if (!member) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
+          <h3> no such member could be found...</h3>
+          <Link to="/members" className="btn-primary">
+            back to members
           </Link>
         </div>
       );
@@ -46,7 +46,7 @@ export default class SingleRoom extends Component {
       goodlooking,
       university,
       images
-    } = room;
+    } = member;
     const [mainImg,...defaultImg] = images;
     return (
         <>
@@ -57,8 +57,8 @@ export default class SingleRoom extends Component {
                 </Link>
             </Banner>
         </StyledHero>
-        <section className="single-room">
-            <div className="single-room-info">
+        <section className="single-member">
+            <div className="single-member-info">
                 <article className="desc">
                     <h3>biography</h3>
                     <p>{description}</p>
@@ -75,7 +75,7 @@ export default class SingleRoom extends Component {
                 </article>
             </div>
         </section>
-        <section className="room-additionaltalents">
+        <section className="member-additionaltalents">
             <h6>Additional Talents</h6>
             <ul className="additionaltalents">
                 {additionaltalents.map((item,index) => {
@@ -111,13 +111,13 @@ export default class SingleRoom extends Component {
 
 /*
 import React, { Component } from "react";
-import defaultBcg from "../images/room-1.jpeg";
+import defaultBcg from "../images/member-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { MemberContext } from "../context";
 
-export default class SingleRoom extends Component {
+export default class SingleMember extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -132,18 +132,18 @@ export default class SingleRoom extends Component {
   //   console.log(this.props);
   // }
   render() {
-    const { getRoom } = this.context;
-    const room = getRoom(this.state.slug);
+    const { getMember } = this.context;
+    const member = getMember(this.state.slug);
 
-    if (!room) {
+    if (!member) {
       return <div className="error">
-          <h3> no such room could be found...</h3> 
-            <Link to='/rooms' className="btn-primary">
-                back to rooms
+          <h3> no such member could be found...</h3> 
+            <Link to='/members' className="btn-primary">
+                back to members
             </Link>
       </div>
     }
-    return <div> hello from single room page{room.name}</div>;
+    return <div> hello from single member page{member.name}</div>;
 }
 }
 */

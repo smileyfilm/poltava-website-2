@@ -3,11 +3,11 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import { readFileSync } from 'fs';
-import RoomContainer from '../components/RoomContainer';
+import MemberContainer from '../components/MemberContainer';
 const Members = () => { 
     return (
     <>
-    <Hero hero="roomsHero">
+    <Hero hero="membersHero">
         <Banner title="Band Members">
             
             <Link to='/' className='btn-primary'>
@@ -17,7 +17,7 @@ const Members = () => {
 
         </Banner>
     </Hero>
-    <RoomContainer/>
+    <MemberContainer/>
     </>
     );   
 };
