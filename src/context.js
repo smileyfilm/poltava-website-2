@@ -12,9 +12,9 @@ class RoomProvider extends Component {
         loading:true,
         heritage:'any',
         capacity:'any',
-        price:0,
-        minPrice:0,
-        maxPrice:0,
+        musicaltalentrating:0,
+        minMusicalTalentRating:0,
+        maxMusicalTalentRating:0,
         minSize:0,
         maxSize:0,
         breakfast:false,
@@ -25,8 +25,8 @@ class RoomProvider extends Component {
 componentDidMount(){
     let rooms = this.formatData(items);
     let featuredRooms = rooms.filter(room => room.featured === true);
-    let minPrice = Math.min(...rooms.map(item => item.price));
-    let maxPrice = Math.max(...rooms.map(item => item.price));
+    let minMusicalTalentRating = Math.min(...rooms.map(item => item.musicaltalentrating));
+    let maxMusicalTalentRating = Math.max(...rooms.map(item => item.musicaltalentrating));
     let maxSize = Math.max(...rooms.map(item => item.size));
 
         this.setState ({
@@ -34,8 +34,8 @@ componentDidMount(){
         featuredRooms,
         sortedRooms:rooms, 
         loading:false,
-        price:minPrice,
-        maxPrice,
+        musicaltalentrating:minMusicalTalentRating,
+        maxMusicalTalentRating,
         maxSize
     });
 }
@@ -67,7 +67,7 @@ handleChange = event => {
 
 filterRooms = () => {
     let {
-        rooms,heritage,capacity,price,minSize,maxSize,breakfast,pets
+        rooms,heritage,capacity,musicaltalentrating,minSize,maxSize,breakfast,pets
     } = this.state
 
 
@@ -76,7 +76,7 @@ filterRooms = () => {
 let tempRooms = [...rooms];
 //transform value
 //capacity = parseInt(capacity)
-price = parseInt(price)
+musicaltalentrating = parseInt(musicaltalentrating)
 
 //filter by heritage
 console.log("First heritage");
@@ -97,9 +97,9 @@ if (capacity !== 'any') {
     console.log(capacity);
 }
 else {capacity = 'any';}
-//filter by price
-console.log("Price = ", price);
-tempRooms = tempRooms.filter(room => room.price >= price);
+//filter by musicaltalentrating
+console.log("MusicalTalentRating = ", musicaltalentrating);
+tempRooms = tempRooms.filter(room => room.musicaltalentrating >= musicaltalentrating);
 //filter by size
 tempRooms = tempRooms.filter(room => room.size >= minSize && room.size <= maxSize)
 

@@ -9,7 +9,7 @@ const getUnique = (items, value) =>{
 export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
     const {
-        handleChange, heritage, capacity, price, minPrice, maxPrice, minSize, maxSize, breakfast, pets
+        handleChange, heritage, capacity, musicaltalentrating, minMusicalTalentRating, maxMusicalTalentRating, minSize, maxSize, breakfast, pets
     } = context;
     // get unique heritages
 let heritageOptions = getUnique(rooms, 'heritage');
@@ -47,16 +47,16 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
             </select>
             </div>
                 {/*end guests*/}
-                {/* room price*/}
+                {/* room musicaltalentrating*/}
                 <div className = "form-group">
-                <label htmlFor="price">
+                <label htmlFor="musicaltalentrating">
                     Musical Talent Minimum: 
                     <br></br>
-                    {price}/10
+                    {musicaltalentrating}/10
                 </label>
-                <input type = "range" name="price" min= {minPrice} max={maxPrice} id="price" value={price} onChange={handleChange} className="form-control" />
+                <input type = "range" name="musicaltalentrating" min= {minMusicalTalentRating} max={maxMusicalTalentRating} id="musicaltalentrating" value={musicaltalentrating} onChange={handleChange} className="form-control" />
                 </div>
-                {/*end of room price */}
+                {/*end of room musicaltalentrating */}
 
                 {/* size */ }
                 <div className = "form-group">
