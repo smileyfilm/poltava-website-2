@@ -12,11 +12,11 @@ class RoomProvider extends Component {
         loading:true,
         heritage:'any',
         capacity:'any',
-        musicaltalentrating:0,
-        minMusicalTalentRating:0,
-        maxMusicalTalentRating:0,
-        minSize:0,
-        maxSize:0,
+        musicalTalentRating:0,
+        minmusicalTalentRating:0,
+        maxmusicalTalentRating:0,
+        minAge:0,
+        maxAge:0,
         breakfast:false,
         pets:false
     };
@@ -25,18 +25,18 @@ class RoomProvider extends Component {
 componentDidMount(){
     let rooms = this.formatData(items);
     let featuredRooms = rooms.filter(room => room.featured === true);
-    let minMusicalTalentRating = Math.min(...rooms.map(item => item.musicaltalentrating));
-    let maxMusicalTalentRating = Math.max(...rooms.map(item => item.musicaltalentrating));
-    let maxSize = Math.max(...rooms.map(item => item.size));
+    let minmusicalTalentRating = Math.min(...rooms.map(item => item.musicalTalentRating));
+    let maxmusicalTalentRating = Math.max(...rooms.map(item => item.musicalTalentRating));
+    let maxAge = Math.max(...rooms.map(item => item.age));
 
         this.setState ({
         rooms,
         featuredRooms,
         sortedRooms:rooms, 
         loading:false,
-        musicaltalentrating:minMusicalTalentRating,
-        maxMusicalTalentRating,
-        maxSize
+        musicalTalentRating:minmusicalTalentRating,
+        maxmusicalTalentRating,
+        maxAge
     });
 }
 
@@ -67,7 +67,7 @@ handleChange = event => {
 
 filterRooms = () => {
     let {
-        rooms,heritage,capacity,musicaltalentrating,minSize,maxSize,breakfast,pets
+        rooms,heritage,capacity,musicalTalentRating,minAge,maxAge,breakfast,pets
     } = this.state
 
 
@@ -76,7 +76,7 @@ filterRooms = () => {
 let tempRooms = [...rooms];
 //transform value
 //capacity = parseInt(capacity)
-musicaltalentrating = parseInt(musicaltalentrating)
+musicalTalentRating = parseInt(musicalTalentRating)
 
 //filter by heritage
 console.log("First heritage");
@@ -97,11 +97,11 @@ if (capacity !== 'any') {
     console.log(capacity);
 }
 else {capacity = 'any';}
-//filter by musicaltalentrating
-console.log("MusicalTalentRating = ", musicaltalentrating);
-tempRooms = tempRooms.filter(room => room.musicaltalentrating >= musicaltalentrating);
-//filter by size
-tempRooms = tempRooms.filter(room => room.size >= minSize && room.size <= maxSize)
+//filter by musicalTalentRating
+console.log("musicalTalentRating = ", musicalTalentRating);
+tempRooms = tempRooms.filter(room => room.musicalTalentRating >= musicalTalentRating);
+//filter by age
+tempRooms = tempRooms.filter(room => room.age >= minAge && room.age <= maxAge)
 
 //filter by breakfast
 

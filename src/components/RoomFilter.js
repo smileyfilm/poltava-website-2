@@ -9,7 +9,7 @@ const getUnique = (items, value) =>{
 export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
     const {
-        handleChange, heritage, capacity, musicaltalentrating, minMusicalTalentRating, maxMusicalTalentRating, minSize, maxSize, breakfast, pets
+        handleChange, heritage, capacity, musicalTalentRating, minmusicalTalentRating, maxmusicalTalentRating, minAge, maxAge, breakfast, pets
     } = context;
     // get unique heritages
 let heritageOptions = getUnique(rooms, 'heritage');
@@ -47,36 +47,36 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
             </select>
             </div>
                 {/*end guests*/}
-                {/* room musicaltalentrating*/}
+                {/* room musicalTalentRating*/}
                 <div className = "form-group">
-                <label htmlFor="musicaltalentrating">
+                <label htmlFor="musicalTalentRating">
                     Musical Talent Minimum: 
                     <br></br>
-                    {musicaltalentrating}/10
+                    {musicalTalentRating}/10
                 </label>
-                <input type = "range" name="musicaltalentrating" min= {minMusicalTalentRating} max={maxMusicalTalentRating} id="musicaltalentrating" value={musicaltalentrating} onChange={handleChange} className="form-control" />
+                <input type = "range" name="musicalTalentRating" min= {minmusicalTalentRating} max={maxmusicalTalentRating} id="musicalTalentRating" value={musicalTalentRating} onChange={handleChange} className="form-control" />
                 </div>
-                {/*end of room musicaltalentrating */}
+                {/*end of room musicalTalentRating */}
 
-                {/* size */ }
+                {/* age */ }
                 <div className = "form-group">
-                <label htmlFor="size">Age</label>
+                <label htmlFor="age">Age</label>
                 <div className="size-inputs">
                 <input type="number" 
-                name = "minSize" 
-                id = "size" 
-                value={minSize} 
+                name = "minAge" 
+                id = "age" 
+                value={minAge} 
                 onChange={handleChange} className="size-input"
                 />
 
                 <input type="number" 
-                name = "maxSize" 
-                id = "size" 
-                value={maxSize} 
+                name = "maxAge" 
+                id = "age" 
+                value={maxAge} 
                 onChange={handleChange} className="size-input"/>
                 </div>
             </div>
-            {/* end of size */}
+            {/* end of age */}
             {/* extras */}
             <div className="form-group">
             <div className="single-extra">

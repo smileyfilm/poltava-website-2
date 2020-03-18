@@ -367,7 +367,7 @@ h6 {
   display: block;
   transition: var(--mainTransition);
 }
-.musicaltalentrating-top {
+.musicalTalentRating-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -379,7 +379,7 @@ h6 {
   text-align: center;
   transition: var(--mainTransition);
 }
-.musicaltalentrating-top h6 {
+.musicalTalentRating-top h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 300;
@@ -398,7 +398,7 @@ h6 {
 .img-container:hover img {
   opacity: 0.3;
 }
-.img-container:hover .musicaltalentrating-top {
+.img-container:hover .musicalTalentRating-top {
   opacity: 0;
 }
 .img-container:hover .room-link {

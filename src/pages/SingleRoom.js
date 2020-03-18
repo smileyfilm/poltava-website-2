@@ -41,7 +41,7 @@ export default class SingleRoom extends Component {
       description,
       capacity,
       size,
-      musicaltalentrating,
+      musicalTalentRating,
       extras,
       breakfast,
       pets,
@@ -65,7 +65,7 @@ export default class SingleRoom extends Component {
                 </article>
                 <article className="info">
                     <h3>info</h3>
-                    <h6>musical talent rating: {musicaltalentrating}/10</h6>
+                    <h6>musical talent rating: {musicalTalentRating}/10</h6>
                     <h6>age: {size} years old</h6>
                     <h6>
                         Instrument: {" "}

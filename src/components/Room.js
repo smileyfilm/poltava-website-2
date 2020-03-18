@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import defaultImg from "../images/poltavabandphoto.jpg";
 import PropTypes from "prop-types";
 export default function Room({room}) {
-    const{name,slug,images,musicaltalentrating} = room;
+    const{name,slug,images,musicalTalentRating} = room;
     return (
     <article className="room">
         <div className = "img-container">
@@ -21,6 +21,6 @@ Room.propTypes = {
        name:PropTypes.string.isRequired,
        slug:PropTypes.string.isRequired,
        images:PropTypes.arrayOf(PropTypes.string).isRequired,
-       musicaltalentrating:PropTypes.number.isRequired,
+       musicalTalentRating:PropTypes.number.isRequired,
     })
 }
