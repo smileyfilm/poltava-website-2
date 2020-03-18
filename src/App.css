@@ -241,12 +241,6 @@ h6 {
   text-align: center;
 }
 .services-center {
-  /*width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;*/
 
   display: flex;
   flex-flow: row wrap;
@@ -254,13 +248,6 @@ h6 {
   justify-content: space-around;
   margin: 0 auto;
   
-  
-  /*width: 70vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;*/
 }
 .service span {
   display: inline-block;
@@ -288,25 +275,12 @@ h6 {
     width: 100%;
   }
 }
-/*end of services */
-/* onHome members */
 
-/*.onHome-members {
-  padding: 5rem 0;
-}*/
 .onHome-members {
   padding: 5rem 0;
   
 }
 
-/*.onHome-members-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}*/
 
 .onHome-members-center {
   width: 80vw;
@@ -317,21 +291,6 @@ h6 {
   grid-column-gap: 40px;
 }
 
-/*.onHome-members-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  
-}
-.onHome-members-center-center {
-  flex: 0 0 calc(16.66% - 20px);
-  background: teal;
-  color: white;
-  padding: 20px;
-  margin: 10px;
-
-}*/
 
 
 @media screen and (min-width: 776px) {
