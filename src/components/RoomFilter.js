@@ -77,7 +77,7 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
                 </div>
             </div>
             {/* end of age */}
-            {/* extras */}
+            {/* additionaltalents */}
             <div className="form-group">
             <div className="single-extra">
             <input type="checkbox" name="goodlooking"
@@ -92,7 +92,7 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
             <label  htmlFor="university"> University?</label>
             </div>
             </div>
-            {/* end of extras */}
+            {/* end of additionaltalents */}
         </form>
     </section>
     );

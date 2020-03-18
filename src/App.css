@@ -456,15 +456,15 @@ h6 {
 .info h6 {
   font-weight: 300;
 }
-.room-extras {
+.room-additionaltalents {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-extras h6 {
+.room-additionaltalents h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-.extras {
+.additionaltalents {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -474,7 +474,7 @@ h6 {
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,
-  .room-extras {
+  .room-additionaltalents {
     width: 95vw;
     max-width: 1170px;
   }

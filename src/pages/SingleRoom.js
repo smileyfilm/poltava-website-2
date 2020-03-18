@@ -42,7 +42,7 @@ export default class SingleRoom extends Component {
       instrument,
       size,
       musicalTalentRating,
-      extras,
+      additionaltalents,
       goodlooking,
       university,
       images
@@ -75,10 +75,10 @@ export default class SingleRoom extends Component {
                 </article>
             </div>
         </section>
-        <section className="room-extras">
+        <section className="room-additionaltalents">
             <h6>Additional Talents</h6>
-            <ul className="extras">
-                {extras.map((item,index) => {
+            <ul className="additionaltalents">
+                {additionaltalents.map((item,index) => {
                     return <li key={index}>- {item}</li>;
                 })}
             </ul>
