@@ -9,7 +9,7 @@ const getUnique = (items, value) =>{
 export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
     const {
-        handleChange, heritage, capacity, musicalTalentRating, minmusicalTalentRating, maxmusicalTalentRating, minAge, maxAge, breakfast, pets
+        handleChange, heritage, instrument, musicalTalentRating, minmusicalTalentRating, maxmusicalTalentRating, minAge, maxAge, goodlooking, university
     } = context;
     // get unique heritages
 let heritageOptions = getUnique(rooms, 'heritage');
@@ -23,7 +23,7 @@ heritageOptions = heritageOptions.map((item,index) =>{
     );
 });
 
-let people = getUnique(rooms, 'capacity');
+let people = getUnique(rooms, 'instrument');
 people = ['any',...people];
 people = people.map((item,index)=>{return <option key={index} value = {item}>{item} </option>
 })
@@ -41,8 +41,8 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
                 {/*end select heritage*/}
                    {/*guests */}
             <div className="form-group">
-                <label htmlFor="capacity">Instruments</label>
-            <select name="capacity" id="capacity" value={capacity}className="form-control" onChange={handleChange}> 
+                <label htmlFor="instrument">Instruments</label>
+            <select name="instrument" id="instrument" value={instrument}className="form-control" onChange={handleChange}> 
             {people} 
             </select>
             </div>
@@ -80,16 +80,16 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
             {/* extras */}
             <div className="form-group">
             <div className="single-extra">
-            <input type="checkbox" name="breakfast"
-            id="breakfast" checked={breakfast} onChange={handleChange}
+            <input type="checkbox" name="goodlooking"
+            id="goodlooking" checked={goodlooking} onChange={handleChange}
             />
-            <label  htmlFor="breakfast"> Good-looking?</label>
+            <label  htmlFor="goodlooking"> Good-looking?</label>
             </div>
             <div className="single-extra">
-            <input type="checkbox" name="pets"
-            id="pets" checked={pets} onChange={handleChange}
+            <input type="checkbox" name="university"
+            id="university" checked={university} onChange={handleChange}
             />
-            <label  htmlFor="pets"> University?</label>
+            <label  htmlFor="university"> University?</label>
             </div>
             </div>
             {/* end of extras */}

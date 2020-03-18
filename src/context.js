@@ -11,14 +11,14 @@ class RoomProvider extends Component {
         featuredRooms: [],
         loading:true,
         heritage:'any',
-        capacity:'any',
+        instrument:'any',
         musicalTalentRating:0,
         minmusicalTalentRating:0,
         maxmusicalTalentRating:0,
         minAge:0,
         maxAge:0,
-        breakfast:false,
-        pets:false
+        goodlooking:false,
+        university:false
     };
     //getData{}
 
@@ -67,7 +67,7 @@ handleChange = event => {
 
 filterRooms = () => {
     let {
-        rooms,heritage,capacity,musicalTalentRating,minAge,maxAge,breakfast,pets
+        rooms,heritage,instrument,musicalTalentRating,minAge,maxAge,goodlooking,university
     } = this.state
 
 
@@ -75,7 +75,7 @@ filterRooms = () => {
 
 let tempRooms = [...rooms];
 //transform value
-//capacity = parseInt(capacity)
+//instrument = parseInt(instrument)
 musicalTalentRating = parseInt(musicalTalentRating)
 
 //filter by heritage
@@ -88,31 +88,31 @@ if (heritage !== 'any') {
 }
 else {heritage = 'any';}
 
-//filter by capacity
-console.log("First capacity");
-console.log(capacity)
-if (capacity !== 'any') {
-    tempRooms = tempRooms.filter(room => room.capacity === capacity);
-    console.log("New capacity")
-    console.log(capacity);
+//filter by instrument
+console.log("First instrument");
+console.log(instrument)
+if (instrument !== 'any') {
+    tempRooms = tempRooms.filter(room => room.instrument === instrument);
+    console.log("New instrument")
+    console.log(instrument);
 }
-else {capacity = 'any';}
+else {instrument = 'any';}
 //filter by musicalTalentRating
 console.log("musicalTalentRating = ", musicalTalentRating);
 tempRooms = tempRooms.filter(room => room.musicalTalentRating >= musicalTalentRating);
 //filter by age
 tempRooms = tempRooms.filter(room => room.age >= minAge && room.age <= maxAge)
 
-//filter by breakfast
+//filter by goodlooking
 
-if (breakfast) {
-    tempRooms = tempRooms.filter(room => room.breakfast === true)
+if (goodlooking) {
+    tempRooms = tempRooms.filter(room => room.goodlooking === true)
 }
 
-//filter by pets 
+//filter by university 
 
-if (pets) {
-    tempRooms = tempRooms.filter(room => room.pets === true)
+if (university) {
+    tempRooms = tempRooms.filter(room => room.university === true)
 }
 
 //change state 

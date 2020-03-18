@@ -39,12 +39,12 @@ export default class SingleRoom extends Component {
     const {
       name,
       description,
-      capacity,
+      instrument,
       size,
       musicalTalentRating,
       extras,
-      breakfast,
-      pets,
+      goodlooking,
+      university,
       images
     } = room;
     const [mainImg,...defaultImg] = images;
@@ -69,9 +69,9 @@ export default class SingleRoom extends Component {
                     <h6>age: {size} years old</h6>
                     <h6>
                         Instrument: {" "}
-                        {`${capacity}`}
+                        {`${instrument}`}
                     </h6>
-                    <h6>{breakfast?"Good-looking":"Not good-looking"}</h6>
+                    <h6>{goodlooking?"Good-looking":"Not good-looking"}</h6>
                 </article>
             </div>
         </section>
