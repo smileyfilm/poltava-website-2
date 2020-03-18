@@ -289,17 +289,17 @@ h6 {
   }
 }
 /*end of services */
-/* onhome rooms */
+/* onHome rooms */
 
-/*.onhome-rooms {
+/*.onHome-rooms {
   padding: 5rem 0;
 }*/
-.onhome-rooms {
+.onHome-rooms {
   padding: 5rem 0;
   
 }
 
-/*.onhome-rooms-center {
+/*.onHome-rooms-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -308,7 +308,7 @@ h6 {
   grid-column-gap: 40px;
 }*/
 
-.onhome-rooms-center {
+.onHome-rooms-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -317,14 +317,14 @@ h6 {
   grid-column-gap: 40px;
 }
 
-/*.onhome-rooms-center {
+/*.onHome-rooms-center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   
   
 }
-.onhome-rooms-center-center {
+.onHome-rooms-center-center {
   flex: 0 0 calc(16.66% - 20px);
   background: teal;
   color: white;
@@ -335,21 +335,21 @@ h6 {
 
 
 @media screen and (min-width: 776px) {
-  .onhome-rooms-center {
+  .onHome-rooms-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 
 @media screen and (min-width: 992px) {
-  .onhome-rooms-center {
+  .onHome-rooms-center {
     width: 95vw;
     max-width: 1170px;
   }
   
 }
 
-/* end pf onhome rooms */
+/* end pf onHome rooms */
 /* room */
 .room {
   box-shadow: var(--lightShadow);
@@ -538,10 +538,10 @@ h6 {
   background: transparent;
   font-size: 1rem;
 }
-.size-inputs {
+.age-inputs {
   display: flex;
 }
-.size-input {
+.age-input {
   width: 40%;
   padding: 0.2rem;
   border: 1px solid var(--mainBlack);

@@ -1,13 +1,13 @@
 import React from 'react';
 import {useContext} from 'react';
-import {RoomContext} from '../context';
+import {MemberContext} from '../context';
 import Title from '../components/Title';
 // get all unique values
 const getUnique = (items, value) =>{
     return [...new Set(items.map(item => item[value]))]
 }
 export default function RoomFilter({rooms}) {
-    const context = useContext(RoomContext);
+    const context = useContext(MemberContext);
     const {
         handleChange, heritage, instrument, musicalTalentRating, minmusicalTalentRating, maxmusicalTalentRating, minAge, maxAge, goodlooking, university
     } = context;
@@ -61,19 +61,19 @@ people = people.map((item,index)=>{return <option key={index} value = {item}>{it
                 {/* age */ }
                 <div className = "form-group">
                 <label htmlFor="age">Age</label>
-                <div className="size-inputs">
+                <div className="age-inputs">
                 <input type="number" 
                 name = "minAge" 
                 id = "age" 
                 value={minAge} 
-                onChange={handleChange} className="size-input"
+                onChange={handleChange} className="age-input"
                 />
 
                 <input type="number" 
                 name = "maxAge" 
                 id = "age" 
                 value={maxAge} 
-                onChange={handleChange} className="size-input"/>
+                onChange={handleChange} className="age-input"/>
                 </div>
             </div>
             {/* end of age */}

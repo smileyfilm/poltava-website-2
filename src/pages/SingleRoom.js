@@ -5,7 +5,7 @@ import defaultBcg from "../images/room-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import { RoomContext } from "../context";
+import { MemberContext } from "../context";
 import StyledHero from '../components/StyledHero';
 
 export default class SingleRoom extends Component {
@@ -17,7 +17,7 @@ export default class SingleRoom extends Component {
       defaultBcg: defaultBcg
     };
   }
-  static contextType = RoomContext;
+  static contextType = MemberContext;
 
   // componentDidMount() {
   //   console.log(this.props);
@@ -115,7 +115,7 @@ import defaultBcg from "../images/room-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import { RoomContext } from "../context";
+import { MemberContext } from "../context";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -126,7 +126,7 @@ export default class SingleRoom extends Component {
       defaultBcg: defaultBcg
     };
   }
-  static contextType = RoomContext;
+  static contextType = MemberContext;
 
   // componentDidMount() {
   //   console.log(this.props);

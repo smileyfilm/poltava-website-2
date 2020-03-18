@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from "react-router-dom";
 import Contact from '../components/Contact';
-import OnHomeRooms from '../components/FeaturedRooms';
+import onHomeRooms from '../components/FeaturedRooms';
 import {FaPhone, FaMailBulk, FaSpotify, FaYoutube}from 'react-icons/fa';
 
 //yo yo
@@ -18,7 +18,7 @@ export default function Home() {
             </Banner>
         </Hero>
         <Contact/>
-        <OnHomeRooms/>
+        <onHomeRooms/>
         </>
     );
 } 

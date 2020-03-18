@@ -1,14 +1,14 @@
 import React, {Component } from 'react';
 import items from './data';
-const RoomContext = React.createContext();
-// <RoomContext.Provider value={}
+const MemberContext = React.createContext();
+// <MemberContext.Provider value={}
 
 
 class RoomProvider extends Component {
     state={
         rooms:[],
         sortedRooms: [],
-        onhomeRooms: [],
+        onHomeRooms: [],
         loading:true,
         heritage:'any',
         instrument:'any',
@@ -24,14 +24,14 @@ class RoomProvider extends Component {
 
 componentDidMount(){
     let rooms = this.formatData(items);
-    let onhomeRooms = rooms.filter(room => room.onhome === true);
+    let onHomeRooms = rooms.filter(room => room.onHome === true);
     let minmusicalTalentRating = Math.min(...rooms.map(item => item.musicalTalentRating));
     let maxmusicalTalentRating = Math.max(...rooms.map(item => item.musicalTalentRating));
     let maxAge = Math.max(...rooms.map(item => item.age));
 
         this.setState ({
         rooms,
-        onhomeRooms,
+        onHomeRooms,
         sortedRooms:rooms, 
         loading:false,
         musicalTalentRating:minmusicalTalentRating,
@@ -124,15 +124,15 @@ this.setState({
 
     render() {
         return (
-        <RoomContext.Provider value={{...this.state, getRoom:this.getRoom,handleChange:this.handleChange }}>
+        <MemberContext.Provider value={{...this.state, getRoom:this.getRoom,handleChange:this.handleChange }}>
             {this.props.children}
-        </RoomContext.Provider>
+        </MemberContext.Provider>
         
         );
     }
 }
 
-const RoomConsumer = RoomContext.Consumer;
+const RoomConsumer = MemberContext.Consumer;
 
 export function withRoomConsumer(Component){
     return function ConsumerWrapper(props){
@@ -145,7 +145,7 @@ export function withRoomConsumer(Component){
 }
 
 
-export{RoomProvider, RoomConsumer, RoomContext}; 
+export{RoomProvider, RoomConsumer, MemberContext}; 
 
 
 
